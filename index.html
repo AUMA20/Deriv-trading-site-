@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<iframe src="https://tradingview.com/widgetembed/?symbol=DERIV%3AVOLATILITY_75&interval=1&hidesidetoolbar=1&symboledit=0&saveimage=1&toolbarbg=f1f3f6&studies=[]&theme=dark&style=1&timezone=Africa%2FNairobi" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
-
-
-<iframe src="https://tradingview.com/widgetembed/?symbol=DERIV%3AVOLATILITY_75&interval=1&theme=dark" width="100%" height="400" frameborder="0"></iframe>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Trading Partner</title>
+    <title>Trading Dashboard</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; background-color: #0e0e0e; color: white; padding: 40px 20px; margin: 0; }
-        .card { background: #1a1a1a; padding: 40px; border-radius: 15px; border: 1px solid #333; max-width: 500px; margin: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        h1 { color: #ff4444; margin-bottom: 10px; }
-        p { color: #cccccc; line-height: 1.6; }
-        .btn { display: inline-block; background: #ff4444; color: white; padding: 15px 35px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 25px; transition: 0.3s; }
-        .btn:hover { background: #e03a3a; transform: scale(1.05); }
+        body { background-color: #101112; color: #c2c2c2; font-family: sans-serif; margin: 0; padding: 10px; }
+        .top-menu { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 15px; border-bottom: 2px solid #00fffb; }
+        .menu-item { flex: 1; padding: 10px; border-radius: 5px; text-align: center; font-size: 12px; font-weight: bold; min-width: 80px; }
+        .red { background: red; color: white; border: 2px solid #00fffb; }
+        .purple { background: #ff00ff; color: white; }
+        .pink { background: #ff007f; color: white; border: 2px solid #00fffb; }
+        .blue { background: #007fff; color: white; }
+        
+        .bot-section { margin-top: 20px; }
+        .bot-grid { display: flex; justify-content: space-around; margin: 20px 0; }
+        .icon-box { text-align: center; font-size: 10px; }
+        .icon-box img { width: 40px; display: block; margin: auto; margin-bottom: 5px; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 13px; }
+        th { text-align: left; padding: 10px; color: #888; }
+        td { padding: 12px 10px; border-top: 1px solid #222; }
+        .status { color: #888; }
     </style>
 </head>
 <body>
-    <div class="card">
-<iframe src="https://tradingview.com/widgetembed/?symbol=DERIV%3AVOLATILITY_75&interval=1&theme=dark" width="100%" height="400" frameborder="0"></iframe>
+    <div class="top-menu">
+        <div class="menu-item red">Dashboard</div>
+        <div class="menu-item purple">Bot Builder</div>
+        <div class="menu-item pink">Free Bots</div>
+        <div class="menu-item blue">D-Trader</div>
+    </div>
 
-        <h1>Deriv Trading</h1>
-        <p>Join the world's most flexible trading platform. Fast withdrawals, 24/7 trading, and professional support.</p>
-        <a href="https://www.deriv.com" class="btn">GET STARTED NOW</a>
+    <div class="bot-section">
+        <p>Import a bot from your computer or Google Drive, build it from scratch, or start with a quick strategy.</p>
+        <div class="bot-grid">
+            <div class="icon-box">📱<br>Local</div>
+            <div class="icon-box">📂<br>Google Drive</div>
+            <div class="icon-box">🧩<br>Bot builder</div>
+            <div class="icon-box">📊<br>Quick strategy</div>
+        </div>
+
+        <h3>Your bots:</h3>
+        <table>
+            <tr><th>Bot name</th><th>Last modified</th><th>Status</th></tr>
+            <tr><td>Trade Recovery Bot</td><td>Today</td><td class="status">Unsaved</td></tr>
+            <tr><td>Volatility 75 Scalper</td><td>28 Mar 2026</td><td class="status">Unsaved</td></tr>
+            <tr><td>Rise/Fall Bot</td><td>26 Mar 2026</td><td class="status">Unsaved</td></tr>
+        </table>
     </div>
 </body>
 </html>
-
