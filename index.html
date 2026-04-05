@@ -7,46 +7,36 @@
     <style>
         body { background-color: #101112; color: #c2c2c2; font-family: sans-serif; margin: 0; padding: 10px; }
         .top-menu { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 15px; border-bottom: 2px solid #00fffb; }
-        .menu-item { flex: 1; padding: 10px; border-radius: 5px; text-align: center; font-size: 12px; font-weight: bold; min-width: 80px; text-decoration: none; }
-        .red { background: red; color: white; border: 2px solid #00fffb; }
-        .purple { background: #ff00ff; color: white; }
-        .pink { background: #ff007f; color: white; border: 2px solid #00fffb; }
-        .blue { background: #007fff; color: white; }
-        
+        .menu-item { flex: 1; padding: 10px; border-radius: 5px; text-align: center; font-size: 12px; font-weight: bold; min-width: 80px; text-decoration: none; color: white; }
+        .red { background: red; border: 2px solid #00fffb; }
+        .purple { background: #ff00ff; }
+        .pink { background: #ff007f; border: 2px solid #00fffb; }
+        .blue { background: #007fff; }
         .bot-section { margin-top: 20px; }
         .bot-grid { display: flex; justify-content: space-around; margin: 20px 0; }
         .icon-box { text-align: center; font-size: 10px; text-decoration: none; color: #c2c2c2; }
-
         table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 13px; }
         th { text-align: left; padding: 10px; color: #888; }
         td { padding: 12px 10px; border-top: 1px solid #222; }
-        .status { color: #888; }
-        a { text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="top-menu">
-        <a href="https://app.deriv.com" class="menu-item red">Dashboard</a>
-        <a href="#" class="menu-item purple">Bot Builder</a>
-        <a href="#" class="menu-item pink">Free Bots</a>
-        <a href="https://app.deriv.com/dtrader" class="menu-item blue">D-Trader</a>
+        <a href="https://oauth.deriv.com/oauth2/authorize?app_id=132104" class="menu-item red">Dashboard</a>
+        <a href="https://oauth.deriv.com/oauth2/authorize?app_id=132104" class="menu-item purple">Bot Builder</a>
+        <a href="https://oauth.deriv.com/oauth2/authorize?app_id=132104" class="menu-item pink">Free Bots</a>
+        <a href="https://oauth.deriv.com/oauth2/authorize?app_id=132104" class="menu-item blue">D-Trader</a>
     </div>
-
     <div class="bot-section">
-        <p>Import a bot from your computer or Google Drive, build it from scratch, or start with a quick strategy.</p>
+        <p>Connect your account using App ID 132104 to start trading.</p>
         <div class="bot-grid">
-            <a href="#" class="icon-box">📱<br>Local</a>
-            <a href="#" class="icon-box">📂<br>Google Drive</a>
-            <a href="#" class="icon-box">🧩<br>Bot builder</a>
-            <a href="#" class="icon-box">📊<br>Quick strategy</a>
+            <a href="https://oauth.deriv.com/oauth2/authorize?app_id=132104" class="icon-box">🧩<br>Login with App ID</a>
         </div>
-
         <h3>Your bots:</h3>
         <table>
             <tr><th>Bot name</th><th>Last modified</th><th>Status</th></tr>
-            <tr><td>Trade Recovery Bot</td><td>Today</td><td class="status">Unsaved</td></tr>
-            <tr><td>Volatility 75 Scalper</td><td>28 Mar 2026</td><td class="status">Unsaved</td></tr>
-            <tr><td>Rise/Fall Bot</td><td>26 Mar 2026</td><td class="status">Unsaved</td></tr>
+            <tr><td>Trade Recovery Bot</td><td>Today</td><td>Ready</td></tr>
+            <tr><td>Volatility 75 Scalper</td><td>28 Mar 2026</td><td>Ready</td></tr>
         </table>
     </div>
 </body>
